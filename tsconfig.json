@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "lib": ["es2021", "dom", "es5", "es6"],
+    "types": ["node"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noImplicitAny": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
