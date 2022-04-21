@@ -1,0 +1,10 @@
+{
+  "name": "@mango3d/integratest",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Test d'intégration pour Mango3D",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mango3d/integratest.git"
+  }
+}
