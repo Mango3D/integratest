@@ -11,6 +11,3 @@ TODO
 ## Usage
 
 TODO
-
-* * *
-Avril 2022
