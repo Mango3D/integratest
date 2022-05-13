@@ -24,7 +24,8 @@ module.exports = () => {
     const extensions = [".tsx", ".ts", ".js", ".json"];
 
     // --- rules
-    const rules = [];
+    const rules = [
+    ];
 
     rules.push(
         // ----- Typescript modules
@@ -34,6 +35,10 @@ module.exports = () => {
             use: [
                 {loader: "ts-loader", options: {}},
             ],
+        },
+        {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
         },
     );
 
@@ -79,13 +84,14 @@ module.exports = () => {
         open: true,
         port: 8000,
         static: {
-          directory: join(__dirname, 'dist'),
+            directory: join(__dirname, 'dist'),
         },
     };
 
     // --- assemble config
     const config = {
         entry,
+        context: __dirname,
         mode: "development",
         module: {rules},
         optimization,

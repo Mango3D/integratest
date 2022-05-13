@@ -1,0 +1,623 @@
+/* ------------------------------------------------------ */
+/* --------------------- GENERAL ------------------------ */
+/* ------------------------------------------------------ */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea::-webkit-resizer {
+  border-bottom: solid #263949 3px;
+  border-right: solid #263949 3px;
+  box-shadow: -1.5px -1.5px 0px white inset;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: white;
+  font-weight: lighter;
+  opacity: 50%;
+}
+
+/* ------------------------------------------------------ */
+/* --------------------- DESKTOP ------------------------ */
+/* ------------------------------------------------------ */
+
+@media screen and (min-width: 1280px) {
+  .header.mini {
+    height: 60px;
+  }
+
+  .nav_menu-mini {
+    width: 30%;
+    justify-content: space-between;
+    top: 30%;
+    right: 1em;
+  }
+
+  .minilogo_container {
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 0.3em;
+  }
+
+  .who_title,
+  .what_title,
+  .how_title {
+    text-align: left;
+    margin: 0 0 0 -1.5em;
+  }
+
+  .who_text,
+  .what_text,
+  .how_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ------------------- WHO-DESKTOP ---------------------- */
+
+  .who {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 500px auto 0 auto;
+  }
+
+  .who_image {
+    width: 50%;
+    background-image: url("../../../dist/images/team.jpg");
+    background-position: left;
+  }
+
+  /* ------------------- WHAT-DESKTOP ---------------------- */
+
+  .what {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .what_carousel {
+    width: 50%;
+  }
+
+  /* ------------------- HOW-DESKTOP ---------------------- */
+
+  .how {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5em 0 5em 0;
+  }
+
+  .input_label {
+    width: 30%;
+    float: left;
+    text-align: right;
+    padding: 10px 10px 0 0;
+  }
+
+  .button_submit {
+    width: 70%;
+    float: right;
+  }
+
+  .how_coordinate {
+    width: 25%;
+    margin: 0 auto 3em auto;
+  }
+
+  .input_block {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.4em 0;
+  }
+
+  .error_explicit {
+    display: block;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* ---------------------- TABLET ------------------------ */
+/* ------------------------------------------------------ */
+
+@media screen and (min-width: 779px) and (max-width: 1279px) {
+  .header.mini {
+    height: 60px;
+  }
+
+  .nav_menu-mini {
+    width: 50%;
+    justify-content: space-evenly;
+    top: 30%;
+    right: 1em;
+  }
+
+  .minilogo_container {
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 0.3em;
+  }
+
+  .who_title,
+  .what_title,
+  .how_title {
+    margin: 1em 0 0.5em 0;
+  }
+
+  .who_text,
+  .what_text,
+  .how_text {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  /* ------------------- WHO-TABLET ---------------------- */
+
+  .who {
+    flex-direction: column;
+    text-align: center;
+    margin: 500px auto 0 auto;
+  }
+
+  .who_image {
+    width: 100%;
+    background-image: url("../../../dist/images/team.jpg");
+    margin-left: 22%;
+    background-position: left;
+  }
+
+  /* ------------------- WHAT-TABLET ---------------------- */
+
+  .what {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .what_carousel {
+    width: 100%;
+  }
+
+  /* ------------------- HOW-TABLET ---------------------- */
+
+  .how {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em 0 5em 0;
+  }
+
+  .input_container {
+    width: 70%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .input_label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1em 0 0.2em 0;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+  }
+
+  .button_submit {
+    width: 100%;
+  }
+
+  .how_coordinate {
+    width: 70%;
+    max-width: 650px;
+    height: 400px;
+    margin: 0 auto 3em auto;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* ---------------------- MOBILE ------------------------ */
+/* ------------------------------------------------------ */
+
+@media all and (max-width: 780px) {
+  .header.mini {
+    height: 120px;
+  }
+
+  .menu_item {
+    font-size: 3vw;
+  }
+
+  .nav_menu-mini {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .minilogo_container {
+    width: 100%;
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    right: 0;
+  }
+
+  .minilogo-star-row {
+    margin: 0 auto;
+  }
+
+  .who_title,
+  .what_title,
+  .how_title {
+    margin: 1em 0 0.5em 0;
+  }
+
+  .who_text,
+  .what_text,
+  .how_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  /* ------------------- WHO-MOBILE ---------------------- */
+
+  .who {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 500px auto 0 auto;
+  }
+
+  .who_image {
+    width: 100%;
+    height: 400px;
+    background-image: url("../../../dist/images/team-mobile.jpg");
+  }
+
+  /* ------------------- WHAT-MOBILE ---------------------- */
+
+  .what {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .what_carousel {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+  }
+
+  /* ------------------- HOW-MOBILE ---------------------- */
+
+  .how {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .input_label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1em 0 0.2em 0;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+  }
+
+  .button_submit {
+    width: 100%;
+  }
+
+  .how_coordinate {
+    width: 67%;
+    max-width: 650px;
+    height: 400px;
+    margin: 0 auto 3em auto;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* ---------------------- STYLES ------------------------ */
+/* ------------------------------------------------------ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 999;
+  transition: ease-out 0.3s;
+}
+
+.header.mini {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #263949;
+  z-index: 999;
+  transition: ease-out 0.3s;
+}
+
+.img-show {
+  background-image: url("../../../dist/images/banner-bcg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-mini {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nav_menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  bottom: 1em;
+}
+
+.nav_menu-mini {
+  position: absolute;
+  display: flex;
+  bottom: 1em;
+}
+
+.minilogo_container {
+  position: absolute;
+}
+
+.minilogo-star-row {
+  width: 310px;
+  height: 40px;
+  background-image: url("../../../dist/images/logo-star-row.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 30vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 2em auto 3em auto;
+}
+
+.menu_item {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.menu_item:hover {
+  color: #e9425d;
+}
+
+.menu_item.active {
+  border-bottom: solid #e9425d 2px;
+  padding-bottom: 3px;
+}
+
+#head:hover .eyes {
+  fill: #e9425d;
+}
+
+/* ------------------- WHO ---------------------- */
+
+.who {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  color: #004e67;
+}
+
+.who_title {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 56px;
+}
+
+.who_paragraph {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.who_image {
+  height: 400px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------------- WHAT ---------------------- */
+
+.what {
+  width: 100%;
+  display: flex;
+  background-color: #3c2a37;
+  color: white;
+}
+
+.what_title {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 56px;
+}
+
+.what_paragraph {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.what_carousel {
+  height: 400px;
+}
+
+/*------------------- CAROUSSEL ---------------------*/
+
+.swiper {
+  width: 300px;
+  height: 300px;
+  margin: 3em 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 315px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #e9425d;
+}
+
+.forest1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("../../../dist/images/carousel-forest-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forest2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("../../../dist/images/carousel-forest-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forest3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("../../../dist/images/carousel-forest-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------------- HOW ---------------------- */
+
+.how {
+  width: 100%;
+  display: flex;
+  background-color: #263949;
+  color: white;
+}
+
+.how_title {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 56px;
+  margin-bottom: 0.5em;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input_label {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.input {
+  background-color: #263949;
+  border: solid white 1px;
+  padding: 4px 10px 2px 10px;
+  color: white;
+}
+
+.button_submit {
+  background-color: #263949;
+  border: solid white 1px;
+  color: white;
+  font-weight: 300;
+  padding: 5px;
+  margin: 1.5em 0 3em 0;
+}
+
+.how_coordinate {
+  background-color: white;
+  color: #263949;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.logo_star-col {
+  width: 80%;
+  height: 40%;
+  background-image: url("../../../dist/images/logo-star-column.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2em auto 0 auto;
+}
+
+.error {
+  border: solid #e9425d 1px;
+  background-image: url("../../../dist/images/red-cross.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 15px;
+}
+
+.error-explicit {
+  display: block;
+  width: 70%;
+  text-align: left;
+  font-size: 16px;
+  color: #e9425d;
+  margin: 0.2em 0 0.5em 0;
+}
