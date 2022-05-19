@@ -36,7 +36,7 @@ input::placeholder {
     width: 30%;
     justify-content: space-between;
     top: 30%;
-    right: 1em;
+    right: 3%;
   }
 
   .minilogo_container {
@@ -47,20 +47,97 @@ input::placeholder {
   }
 
   .who_title,
-  .what_title,
-  .how_title {
+  .what_title {
     text-align: left;
     margin: 0 0 0 -1.5em;
   }
 
+  .how_title {
+    width: 100%;
+    margin-left: 15%;
+  }
+
+  .header-redline {
+    width: 25%;
+    height: 18px;
+    top: 483px;
+    right: 3%;
+    position: absolute;
+    border-top: solid 1px #e9425d;
+    border-right: solid 1px #e9425d;
+    z-index: 9999;
+  }
+
+  .header-redline-mini {
+    width: 5%;
+    height: 18px;
+    top: 43px;
+    right: 3%;
+    position: absolute;
+    border-top: solid 1px #e9425d;
+    border-right: solid 1px #e9425d;
+    z-index: 9999;
+  }
+
+  .page-redline {
+    width: 100%;
+    height: 1380px;
+    position: absolute;
+    border-right: solid 1px #e9425d;
+    z-index: 500;
+    top: 0;
+    right: 3%;
+    bottom: 10%;
+    pointer-events: none;
+  }
+
+  .what-redline {
+    width: 9%;
+    height: 30px;
+    top: 100px;
+    right: 3%;
+    position: absolute;
+    border-bottom: solid 1px #e9425d;
+    z-index: 100;
+  }
+
+  .how-redline {
+    width: 85%;
+    height: 30px;
+    margin: 0 0 1em 12%;
+    padding-right: 10px;
+    border-left: solid 1px #e9425d;
+    border-top: solid 1px #e9425d;
+  }
+
+  .how-item {
+    border-bottom: solid 1px #e9425d;
+  }
+
+  .logo_star-col {
+    width: 80%;
+    height: 40%;
+    margin: 2em auto 0 auto;
+  }
+
   .who_text,
-  .what_text,
-  .how_text {
+  .what_text {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .how_text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .how_form {
+    width: 50%;
   }
   /* ------------------- WHO-DESKTOP ---------------------- */
 
@@ -79,6 +156,7 @@ input::placeholder {
   /* ------------------- WHAT-DESKTOP ---------------------- */
 
   .what {
+    position: relative;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -108,8 +186,17 @@ input::placeholder {
   }
 
   .how_coordinate {
-    width: 25%;
-    margin: 0 auto 3em auto;
+    width: 40%;
+    margin: 0 0 0 1em;
+  }
+
+  .coordinate-container {
+    width: 70%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    background-color: white;
   }
 
   .input_block {
@@ -140,6 +227,69 @@ input::placeholder {
     right: 1em;
   }
 
+  .header-redline {
+    width: 25%;
+    height: 18px;
+    top: 483px;
+    right: 3%;
+    position: absolute;
+    border-top: solid 1px #e9425d;
+    border-right: solid 1px #e9425d;
+    z-index: 9999;
+  }
+
+  .header-redline-mini {
+    width: 5%;
+    height: 18px;
+    top: 43px;
+    right: 3%;
+    position: absolute;
+    border-top: solid 1px #e9425d;
+    border-right: solid 1px #e9425d;
+    z-index: 9999;
+  }
+
+  .page-redline {
+    width: 100%;
+    height: 1993px;
+    position: absolute;
+    border-right: solid 1px #e9425d;
+    z-index: 500;
+    top: 0;
+    right: 3%;
+    bottom: 10%;
+    pointer-events: none;
+  }
+
+  .what-redline {
+    width: 23%;
+    height: 30px;
+    top: 1700px;
+    right: 3%;
+    position: absolute;
+    border-bottom: solid 1px #e9425d;
+    z-index: 100;
+  }
+
+  .how-redline {
+    width: 66%;
+    height: 30px;
+    margin: 2em 0 1em 31%;
+    padding-right: 10px;
+    border-left: solid 1px #e9425d;
+    border-top: solid 1px #e9425d;
+  }
+
+  .how-item {
+    border-bottom: solid 1px #e9425d;
+  }
+
+  .logo_star-col {
+    width: 80%;
+    height: 40%;
+    margin: 2em auto 1em auto;
+  }
+
   .minilogo_container {
     width: 50%;
     position: absolute;
@@ -148,9 +298,12 @@ input::placeholder {
   }
 
   .who_title,
-  .what_title,
-  .how_title {
+  .what_title {
     margin: 1em 0 0.5em 0;
+  }
+
+  .how_title {
+    margin: 0 0 0.5em 0;
   }
 
   .who_text,
@@ -222,6 +375,15 @@ input::placeholder {
     height: 400px;
     margin: 0 auto 3em auto;
   }
+
+  .coordinate-container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    background-color: white;
+  }
 }
 
 /* ------------------------------------------------------ */
@@ -255,15 +417,19 @@ input::placeholder {
     margin: 0 auto;
   }
 
-  .who_title,
   .what_title,
   .how_title {
+    position: relative;
     margin: 1em 0 0.5em 0;
+    text-decoration: underline;
+    text-decoration-color: #e9425d;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
   }
 
   .who_text,
   .what_text,
-  .how_text {
+  .how-text {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -333,10 +499,25 @@ input::placeholder {
   }
 
   .how_coordinate {
-    width: 67%;
+    width: 70%;
     max-width: 650px;
     height: 400px;
     margin: 0 auto 3em auto;
+  }
+
+  .logo_star-col {
+    width: 90%;
+    height: 40%;
+    margin: 1em auto;
+  }
+
+  .coordinate-container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    background-color: white;
   }
 }
 
@@ -549,6 +730,8 @@ input::placeholder {
 .how {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #263949;
   color: white;
 }
@@ -590,19 +773,16 @@ input::placeholder {
 }
 
 .how_coordinate {
-  background-color: white;
   color: #263949;
   font-weight: lighter;
   text-align: center;
 }
 
 .logo_star-col {
-  width: 80%;
-  height: 40%;
+  background-position: center;
   background-image: url("../../../dist/images/logo-star-column.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 2em auto 0 auto;
 }
 
 .error {

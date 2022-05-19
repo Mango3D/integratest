@@ -15,6 +15,9 @@ const Header = () => {
 
     return (
         <header className={scrolled ? "header mini" : "header img-show"}>
+            <div
+                className={scrolled ? "header-redline-mini" : "header-redline"}
+            />
             <nav className={scrolled ? "nav-mini" : "nav"}>
                 {scrolled ? (
                     <div className="minilogo_container">
@@ -45,7 +48,9 @@ const Header = () => {
                     <a
                         onClick={() => setActive("how")}
                         className={
-                            active === "how" ? "menu_item active" : "menu_item"
+                            active === "how"
+                                ? "menu_item active how-item"
+                                : "menu_item how-item"
                         }
                         href="#How"
                     >

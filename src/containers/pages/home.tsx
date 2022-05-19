@@ -24,10 +24,8 @@ const HomePageContainer: FC = (): ReactElement => {
 
     return (
         <>
-            <div
-                className="page"
-                onScroll={e => console.log("prout", e.target)}
-            >
+            <div className="page">
+                <div className="page-redline" />
                 <header>
                     <Header />
                 </header>

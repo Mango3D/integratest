@@ -6,6 +6,7 @@ import Carousel from "./Carousel";
 const What = () => {
     return (
         <section id="What" className="what">
+            <div className="what-redline" />
             <div className="what_text">
                 <h2 className="what_title">What we do?</h2>
                 <p className="what_paragraph">
